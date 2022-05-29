@@ -4,6 +4,13 @@ variable "cluster-name" {
     description = "Name of the EKS Cluster" 
 }
 
+variable "cluster-node-name" {
+    default = "tf-eks-node"
+    type = string
+    description = "Name of the EKS Cluster Node Name" 
+}
+
+
 variable "kubernetes-version" {
     default = "1.21"
     type = string
